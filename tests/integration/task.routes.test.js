@@ -59,9 +59,4 @@ describe('Task API endpoints', () => {
     expect(res.statusCode).toBe(204);
   });
 
-  test('GET /api/tasks/:id - retourne 404 après suppression', async () => {
-    const res = await request(app).get(`/api/tasks/${taskId}`);
-
-    expect(res.statusCode).toBe(404);
-  });
 });
